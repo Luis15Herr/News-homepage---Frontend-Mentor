@@ -1,0 +1,15 @@
+$Softorange: hsl(35, 77%, 62%); //Ligth tittle
+$Softred: hsl(5, 85%, 63%); //Button
+$Offwhite: hsl(36, 100%, 99%); //Background
+$Grayishblue: hsl(233, 8%, 79%); //Numbers
+$Darkgrayishblue: hsl(236, 13%, 42%); //Paragraphs
+$Verydarkblue: hsl(240, 100%, 5%); //Tittles and dark box
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 15px;
+}
