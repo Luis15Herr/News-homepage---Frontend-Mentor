@@ -12,4 +12,99 @@ $Verydarkblue: hsl(240, 100%, 5%); //Tittles and dark box
 }
 body {
   font-size: 15px;
+  font-family: "Inter", sans-serif;
+  position: relative;
+}
+
+.container {
+  width: 1030px;
+  margin: auto;
+}
+
+.header {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__item {
+  text-decoration: none;
+  margin-left: 30px;
+  color: $Darkgrayishblue;
+}
+
+.new__img {
+  width: 680px;
+  height: 280px;
+}
+.main__top {
+  display: grid;
+  grid-template-columns: 680px 1fr;
+  grid-column-gap: 30px;
+}
+.main__list {
+  background-color: $Verydarkblue;
+  padding: 30px 25px;
+}
+.main-list__tittle {
+  color: $Softorange;
+}
+.list__item {
+  padding: 35px 0;
+  border-bottom: 1px solid $Darkgrayishblue;
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+.list__tittle {
+  color: $Offwhite;
+  margin-bottom: 10px;
+}
+
+.list__text {
+  color: $Grayishblue;
+  font-size: 0.9em;
+}
+
+.new__content {
+  display: flex;
+  margin-top: 27px;
+}
+.new__tittle {
+  width: 50%;
+  color: $Verydarkblue;
+  font-size: 3.5em;
+  font-weight: 800;
+  line-height: 52px;
+}
+.new__inner {
+  width: 50%;
+}
+.new__text {
+  color: $Darkgrayishblue;
+  padding-left: 14px;
+  font-size: 0.9em;
+  word-spacing: 1px;
+  line-height: 22px;
+  position: relative;
+  top: -3px;
+}
+
+.new__more {
+  height: 44px;
+  width: 174px;
+  background: $Softred;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: $Offwhite;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.85em;
+  margin-top: 31px;
+  margin-left: 12px;
+  letter-spacing: 4px;
 }
