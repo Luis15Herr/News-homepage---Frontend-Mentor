@@ -10,6 +10,10 @@ $Verydarkblue: hsl(240, 100%, 5%); //Tittles and dark box
   padding: 0;
   margin: 0;
 }
+body,
+html {
+  height: 100%;
+}
 body {
   font-size: 15px;
   font-family: "Inter", sans-serif;
@@ -28,10 +32,25 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.logo {
+  svg {
+    transform: scale(0.9);
+    position: relative;
+    left: -2px;
+    bottom: -1px;
+  }
+}
 .nav__item {
   text-decoration: none;
-  margin-left: 30px;
+  margin-left: 31px;
   color: $Darkgrayishblue;
+  transition: ease 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    color: $Softred;
+    transition: ease 0.2s;
+  }
 }
 
 .new__img {
@@ -51,6 +70,7 @@ body {
   color: $Softorange;
   font-size: 2.4em;
   font-weight: 700;
+  margin-top: 1px;
 }
 .list__item {
   padding: 28px 0;
@@ -64,6 +84,11 @@ body {
 .list__tittle {
   color: $Offwhite;
   margin-bottom: 10px;
+  &:hover {
+    cursor: pointer;
+    color: $Softorange;
+    transition: ease 0.2s;
+  }
 }
 
 .list__text {
@@ -108,9 +133,14 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 0.85em;
-  margin-top: 31px;
+  margin-top: 32px;
   margin-left: 12px;
   letter-spacing: 4px;
+  &:hover {
+    cursor: pointer;
+    background-color: $Verydarkblue;
+    transition: ease 0.2s;
+  }
 }
 
 .main__bottom {
@@ -148,10 +178,27 @@ body {
   font-size: 1.12em;
   font-weight: 800;
   margin-top: 10px;
+  &:hover {
+    cursor: pointer;
+    color: $Softred;
+    transition: ease 0.2s;
+  }
 }
 .news__text {
   margin-top: 10px;
   line-height: 24px;
   font-size: 0.92em;
   color: $Darkgrayishblue;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75em;
+  a {
+    font-weight: 700;
+    color: $Softred;
+  }
 }
