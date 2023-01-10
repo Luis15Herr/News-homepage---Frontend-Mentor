@@ -15,6 +15,10 @@ body {
   position: relative;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .container {
   width: 1032px;
   margin: auto;
@@ -54,6 +58,7 @@ body {
   display: none;
   position: relative;
   width: 40px;
+  z-index: 10;
 }
 
 .cross {
@@ -113,6 +118,11 @@ body {
 .new__img {
   width: 680px;
   height: 280px;
+}
+
+.new__img--mobile {
+  display: none;
+  width: 100%;
 }
 
 .main__top {
@@ -344,6 +354,14 @@ body {
     grid-row-gap: 35px;
   }
 }
+@media screen and (max-width: 600px) {
+  .new__img {
+    display: none;
+  }
+  .new__img--mobile {
+    display: block;
+  }
+}
 /*Animation*/
 @-webkit-keyframes top {
   0% {
@@ -494,4 +512,44 @@ body {
   100% {
     transform: scale(1);
   }
+}
+.side__nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.46);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.side__nav.active {
+  width: 100%;
+}
+.side__nav.active .side__nav-inner {
+  width: 65%;
+}
+
+.side__nav-inner {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 135px;
+}
+
+.side__nav-item {
+  padding: 8px 8px 16px 25px;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: hsl(240deg, 100%, 5%);
+  display: block;
+  transition: 0.3s;
 }/*# sourceMappingURL=style.css.map */
